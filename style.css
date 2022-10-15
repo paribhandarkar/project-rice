@@ -46,7 +46,7 @@ header {
 
 .main-icon {
     flex-grow: 0.5;
-    padding: 50px 0;
+    padding: 50px 30px;
 }
 
 .main-text {
@@ -393,7 +393,10 @@ input {
     border-bottom: 1px solid black;
     outline: none;
     padding: 9%;
+    font-size: large;
     width: 411px;
+    display: block;
+    /* margin-bottom: 3%; */
 }
 
 ::placeholder {
@@ -413,6 +416,8 @@ input {
 
 .contact-form button {
     padding-top: 5%;
+    margin-top: 10%;
+    float: right;
 }
 
 .index-sec-5 article strong {
