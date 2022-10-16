@@ -100,7 +100,7 @@ header {
     font-size: 24.7231px;
     line-height: 32px;
     text-align: center;
-    background: url(/images/cg-map.svg);
+    background: url(images/cg-map.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 712px;
@@ -203,7 +203,7 @@ img[alt="rice-bowl"] {
 }
 
 .index-sec-3 div:first-child {
-    background: url(/images/med-rice-intro.svg);
+    background: url(images/med-rice-intro.svg);
     background-repeat: no-repeat;
     background-position-x: center;
     margin: auto;
@@ -215,7 +215,7 @@ img[alt="rice-bowl"] {
 }
 
 .index-sec-3 div:last-child {
-    background: url(/images/bhaji-intro.svg);
+    background: url(images/bhaji-intro.svg);
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: bottom;
@@ -298,7 +298,7 @@ img[alt="rice-bowl"] {
 }
 
 .index-sec-4 {
-    background: url(/images/portal-intro.svg);
+    background: url(images/portal-intro.svg);
     background-color: var(--green-bg);
     background-repeat: no-repeat;
     background-position: center;
@@ -538,7 +538,7 @@ img[alt='portal-intro'] {
 
 .leaf-veg-sec2{
     margin-top: 178px;
-    background: url(/images/leaf-veg-sec2-pic.svg);
+    background: url(images/leaf-veg-sec2-pic.svg);
     background-repeat: no-repeat;
     background-color: #F1E2C8;
 
