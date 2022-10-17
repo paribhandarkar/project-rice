@@ -564,10 +564,12 @@ input {
   line-height: 103px;
   font-family: var(--text-font-sans-pro);
   margin: 52px 0;
+  text-align: center;
 }
 
-.rice-collection div {
+.rice-collection div{
   display: flex;
+  justify-content: center;
 }
 
 .rice-collection p {
@@ -577,6 +579,38 @@ input {
   line-height: 38px;
   text-align: justify;
   font-family: var(--text-font-sans-pro);
+  max-width: 430px;
+  margin: 3% 5%;
+  color: #000000;
+}
+
+.rice-collection img {
+  max-width: 100%;
+  margin: auto;
+  height: auto;
+}
+
+.rice-collection h5{
+  font-style: normal;
+font-weight: 700;
+font-size: 60px;
+line-height: 75px;
+text-transform: uppercase;
+font-family: var(--text-font-sans-pro);
+text-align: center;
+margin-bottom: 100px;
+}
+
+.rice-circle{
+  display: flex;
+  justify-content: center;
+  margin: 10%;
+}
+
+img[alt='all-rice-types']{
+  max-width: 100%;
+  margin: auto;
+  height: auto;
 }
 
 /* .med-rice-main-img {
