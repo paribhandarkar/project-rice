@@ -6,6 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Medicinal Rice Varieties | Staple</title>
     <link rel="stylesheet" href="style.css" />
+    <script>
+      function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+
+        for (var i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var elementTop = reveals[i].getBoundingClientRect().top;
+          var elementVisible = 150;
+
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+
+      window.addEventListener("scroll", reveal);
+
+      //   site from where i took the logic
+      //   https://alvarotrigo.com/blog/css-animations-scroll/
+    </script>
     <style>
       body {
         background: url(/images/med-rice-line-bg.svg);
@@ -56,8 +78,7 @@
         <h3>The Collection</h3>
         <h2>Medicinal Rice Varieties</h2>
       </section>
-
-      <article class="rice-collection">
+      <article class="rice-collection reveal">
         <img src="images/laicha.svg" alt="laicha images" />
         <h4>Laicha</h4>
         <div>
@@ -72,7 +93,7 @@
         </div>
       </article>
 
-      <article class="rice-collection">
+      <article class="rice-collection reveal">
         <img src="images/maharaji.svg" alt="maharaji images" />
         <h4>Maharaji</h4>
         <div>
@@ -88,7 +109,7 @@
         </div>
       </article>
 
-      <article class="rice-collection">
+      <article class="rice-collection reveal">
         <img src="images/gathuan.svg" alt="gathuan images" />
         <h4>Gathuan</h4>
         <div>
@@ -101,7 +122,7 @@
         </div>
       </article>
 
-      <article class="rice-collection">
+      <article class="rice-collection reveal">
         <img src="images/karhani.svg" alt="karhani images" />
         <h4>Karhani</h4>
         <div>
@@ -117,7 +138,8 @@
             and also used as a tonic.
           </p>
           <p>
-            Karhani variety is medicinally famous in both Chhattisgarh and Jharkhand.
+            Karhani variety is medicinally famous in both Chhattisgarh and
+            Jharkhand.
           </p>
         </div>
         <div>
@@ -136,7 +158,7 @@
         </div>
       </article>
 
-      <article class="rice-collection">
+      <article class="rice-collection reveal">
         <img src="images/baisoor.svg" alt="baisoor images" />
         <h4>Baisoor</h4>
         <div>
@@ -150,39 +172,51 @@
             rice bran is useful.
           </p>
         </div>
-        <p style="max-width: 430px;">It is also used as a face pack with neem leaves.</p>
+        <p style="max-width: 430px">
+          It is also used as a face pack with neem leaves.
+        </p>
       </article>
 
-      <article class="rice-collection">
+      <article class="rice-collection reveal">
         <img src="images/danwar.svg" alt="danwar images" />
         <h4>Danwar</h4>
         <div>
-          <p>Raw rice of
-            Danwar variety of Chhattisgarhis given to the pregnant cow for safe pregnancy, healthy calf and for easily removal of placenta.</p>
-            <p>The green plants of the variety are also given to the cattle for the same case.</p>
+          <p>
+            Raw rice of Danwar variety of Chhattisgarhis given to the pregnant
+            cow for safe pregnancy, healthy calf and for easily removal of
+            placenta.
+          </p>
+          <p>
+            The green plants of the variety are also given to the cattle for the
+            same case.
+          </p>
         </div>
       </article>
 
-      <article class="rice-collection">
+      <article class="rice-collection reveal">
         <img src="images/bhejri.svg" alt="bhejri images" />
         <h4>Bhejri</h4>
         <div>
-          <p>Given to lactating mothers. For early removal of placenta, it is given with linseed seeds and gur to
-            cows after delivery</p>
+          <p>
+            Given to lactating mothers. For early removal of placenta, it is
+            given with linseed seeds and gur to cows after delivery
+          </p>
         </div>
       </article>
 
-      <article class="rice-collection">
+      <article class="rice-collection reveal">
         <img src="images/resari.svg" alt="resari images" />
         <h4>Resari</h4>
         <div>
           <p>Rice water is useful as a tonic for cattles.</p>
-          <p>Puffed rice mixed with bark
-            of Saccharum spontaneum plant is useful in chronic cough</p>
+          <p>
+            Puffed rice mixed with bark of Saccharum spontaneum plant is useful
+            in chronic cough
+          </p>
         </div>
       </article>
 
-      <article class="rice-collection">
+      <article class="rice-collection reveal">
         <img src="images/shoth.svg" alt="shoth images" />
         <h4>Shoth</h4>
         <div>
@@ -190,7 +224,7 @@
         </div>
       </article>
 
-      <article class="rice-collection">
+      <article class="rice-collection reveal">
         <img src="images/suldhan.svg" alt="suldhan images" />
         <h4>Suldhan</h4>
         <div>
@@ -198,7 +232,7 @@
         </div>
       </article>
 
-      <article class="rice-collection">
+      <article class="rice-collection reveal">
         <img src="images/saraiphool.svg" alt="saraiphool images" />
         <h4>Sarai Phool</h4>
         <div>
@@ -206,17 +240,17 @@
         </div>
       </article>
 
-      <article class="rice-collection">
+      <article class="rice-collection reveal">
         <h5>For Diabetic Patients</h5>
-        <img src="images/cheptigurmutia.svg" alt="chepti gurmutia images">
+        <img src="images/cheptigurmutia.svg" alt="chepti gurmutia images" />
         <h4>Chepti Gurmutia</h4>
         <h4>&</h4>
-        <img src="/images/mehardhan.svg" alt="mehardhan images">
+        <img src="/images/mehardhan.svg" alt="mehardhan images" />
         <h4>Mehar Dhan</h4>
       </article>
 
-      <section class="rice-circle">
-        <img src="images/rice-circle.png" alt="all-rice-types">
+      <section class="rice-circle reveal">
+        <img src="images/rice-circle.png" alt="all-rice-types" />
       </section>
 
       <section class="footer">
@@ -226,7 +260,6 @@
           <a href="#">back home.</a>
         </div>
       </section>
-
     </main>
   </body>
 </html>
