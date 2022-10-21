@@ -289,7 +289,8 @@ img[alt="rice-bowl"] {
 
 .index-sec-3-btn button,
 .index-sec-4 button,
-.index-sec-5 button {
+.index-sec-5 button,
+.search-button {
   font-style: normal;
   font-weight: 700;
   font-size: 25px;
@@ -782,9 +783,35 @@ max-width: 420px;
   background: #d9ce96;
   border: 3px solid #a69f41;
   border-radius: 30px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+
+  font-family: var(--text-font-sintony);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25.9134px;
 }
 
 .search-input:focus {
   border: 4px solid #a69f41;
   background-color: #e4d89d;
+}
+
+.search-bar {
+  display: flex;
+  width: 45vw;
+}
+
+.search-button {
+  background: #a69f41;
+  border: none;
+  width: 204px;
+  color: black;
+  position: relative;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.search-button:hover {
+  cursor: pointer;
 }
