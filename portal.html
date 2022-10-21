@@ -151,19 +151,39 @@
       input[type="radio"] {
         transform: scale(1.5);
       }
+
+      .portal-h1 {
+        font-family: "Source Sans Pro", sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 117.859px;
+        line-height: 153px;
+        -webkit-text-stroke: 6px #e6eeca;
+        color: #3e5902;
+        align-self: center;
+      }
+
+      .portal-header{
+        background: url(images/portal-main.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto;
+        background-position-y: 100px;
+      }
     </style>
   </head>
   <body>
     <section class="portal-header">
       <img src="images/main-icon.svg" alt="main-icon" />
-      <img src="images/portal-main.svg" alt="portal-intro" />
+      <!-- <img src="images/portal-main.svg" alt="portal-intro" /> -->
+      <h1 class="portal-h1">Farmer's Portal</h1>
       <nav class="portal-nav">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="#">Farmer's Portal</a></li>
           <li><a href="search.html">Search</a></li>
           <li><a href="med-rice.html">Medicinal Rice varieties</a></li>
-          <li><a href="index.html">Contact Us</a></li>
+          <li><a href="index.html#contact-form">Contact Us</a></li>
         </ul>
       </nav>
     </section>

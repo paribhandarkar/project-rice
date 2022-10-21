@@ -651,7 +651,7 @@ img[alt="all-rice-types"] {
 }
 
 .portal-nav {
-  width: 207px;
+  max-width: 207px;
   justify-items: right;
 }
 
