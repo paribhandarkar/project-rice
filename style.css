@@ -48,9 +48,9 @@ header {
   align-items: flex-start;
 }
 
-.main-icon {
+.main-icon:not(.search-page) {
   flex-grow: 0.5;
-  /* padding: 50px 30px; */
+  padding: 50px 30px;
 }
 
 .main-text {
@@ -74,7 +74,8 @@ header {
 
 .index-nav ul,
 .med-rice-nav ul,
-.portal-header nav ul {
+.portal-header nav ul,
+.search-page-index ul {
   display: grid;
   list-style: none;
   grid-gap: 58px;
@@ -84,7 +85,8 @@ header {
 
 .index-nav a,
 .med-rice-nav a,
-.portal-header a {
+.portal-header a,
+.search-page-index a {
   text-decoration: none;
   color: #ffffff;
   font-family: var(--text-font-sintony);
@@ -96,7 +98,8 @@ header {
 
 .index-nav a:hover,
 .med-rice-nav a:hover,
-.portal-header a:hover {
+.portal-header a:hover,
+.search-page-index a:hover {
   font-size: 25px;
 }
 
@@ -393,7 +396,8 @@ img[alt="rice-bowl"] {
   padding-bottom: 5%;
 }
 
-input:not(.search-input) {
+/* input:not(.search-input) { */
+  input{
   background: transparent;
   border: none;
   border-bottom: 1px solid black;
@@ -405,7 +409,8 @@ input:not(.search-input) {
   /* margin-bottom: 3%; */
 }
 
-::placeholder:not(.search-input) {
+/* ::placeholder:not(.search-input) { */
+  ::placeholder{
   font-style: normal;
   font-weight: 300;
   font-size: 20px;
@@ -475,7 +480,7 @@ input:not(.search-input) {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 5%;
+  padding: 5% 1% 5% 5%;
 }
 
 .med-rice-header h1 {
@@ -775,11 +780,12 @@ max-width: 420px;
   line-height: 27px;
   font-family: var(--text-font-sans-pro);
   color: black;
+  text-transform: none;
 }
 
 .search-input {
   padding: 30px;
-  width: 95%;
+  width: 100%;
   background: #d9ce96;
   border: 3px solid #a69f41;
   border-radius: 30px;
@@ -793,13 +799,18 @@ max-width: 420px;
 }
 
 .search-input:focus {
-  border: 4px solid #a69f41;
-  background-color: #e4d89d;
+  /* border: 4px solid #a69f41; */
+  background-color: #ede1a4;
+  outline: none;
+}
+
+.search-button:hover {
+  cursor: pointer;
 }
 
 .search-bar {
   display: flex;
-  width: 45vw;
+  width: 48vw;
 }
 
 .search-button {
@@ -812,6 +823,6 @@ max-width: 420px;
   border-bottom-left-radius: 0;
 }
 
-.search-button:hover {
-  cursor: pointer;
-}
+/* input[type=search]:focus {
+} */
+
