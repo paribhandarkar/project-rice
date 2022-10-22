@@ -157,23 +157,83 @@
         font-style: normal;
         font-weight: 900;
         font-size: 117.859px;
-        line-height: 153px;
+        /* line-height: 153px; */
         -webkit-text-stroke: 6px #e6eeca;
         color: #3e5902;
         align-self: center;
       }
 
-      .portal-header{
+      .portal-header {
         background: url(images/portal-main.svg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: auto;
         background-position-y: 100px;
       }
+
+      @media (max-width: 920px) {
+        .portal-h1 {
+          font-size: 70px;
+          -webkit-text-stroke: 2px #e6eeca;
+          order: 3;
+        }
+        .portal-header {
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 3% 0;
+          background-position-y: 130px;
+        }
+        img[alt="main-icon"] {
+          margin: auto;
+          order: 2;
+        }
+        .portal-header nav ul {
+          display: inline-flex;
+          flex-direction: row;
+          grid-gap: 7%;
+          border: 1px solid black;
+          width: max-content;
+          padding: 3%;
+        }
+        .portal-header a {
+          font-size: 15px;
+          background-color: #e6eeca;
+        }
+        .portal-header a:hover {
+          text-decoration: overline;
+          font-size: 15px;
+        }
+        .portal-header nav {
+          order: 1;
+        }
+        .portal-nav{
+          justify-items: center;
+          max-width: fit-content;
+          margin-bottom: 3%;
+        }
+        .portal-info {
+          font-size: 20px;
+          padding: 100px;
+        }
+        label{
+          font-size: 19px;
+        }
+        ::placeholder {
+        font-size: 19px;
+      }
+      option{
+        font-size: 19px;
+      }
+      select{
+        font-size: 19px;
+      }
+        
+      }
     </style>
   </head>
   <body>
-    <section class="portal-header">
+    <section class="portal-header" id="top">
       <img src="images/main-icon.svg" alt="main-icon" />
       <!-- <img src="images/portal-main.svg" alt="portal-intro" /> -->
       <h1 class="portal-h1">Farmer's Portal</h1>
@@ -386,8 +446,8 @@
     <section class="footer" style="margin-top: 5%">
       <img src="/images/main-icon.svg" alt="icon" />
       <div>
-        <a href="#header">back to top.</a>
-        <a href="#header">back home.</a>
+        <a href="#top">back to top.</a>
+        <a href="index.html">back home.</a>
       </div>
     </section>
   </body>

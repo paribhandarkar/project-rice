@@ -874,13 +874,14 @@ max-width: 420px;
   padding: 4%;
 }
 
-.rice-col h5{
+.rice-col h5 {
   font-style: normal;
-font-weight: 700;
-font-size: 60px;
-line-height: 75px;
-text-transform: uppercase;
-font-family: var(--text-font-sans-pro);
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 75px;
+  text-transform: uppercase;
+  font-family: var(--text-font-sans-pro);
 }
 
+/* portal media queries */
 
