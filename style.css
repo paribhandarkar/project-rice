@@ -153,7 +153,8 @@ header {
   text-transform: uppercase;
 }
 
-.index-sec-2 p {
+.index-sec-2 p,
+.index-sec-2 ul {
   font-style: normal;
   font-weight: 300;
   font-size: 30px;
@@ -281,13 +282,15 @@ img[alt="rice-bowl"] {
 }
 
 .index-sec-3-btn {
-  margin: auto;
+  margin-right: auto;
   padding-bottom: 130px;
+  padding-left: 15%;
 }
 
 .index-sec-3-btn button:hover {
   cursor: pointer;
-  opacity: 80%;
+  /* opacity: 80%; */
+  background-color: #486804;
 }
 
 .index-sec-3-btn button,
@@ -827,25 +830,6 @@ max-width: 420px;
   border-bottom-left-radius: 0;
 }
 
-@media (max-width: 480px) {
-  .search-header h2 {
-    font-size: 50px;
-  }
-  .footer div a {
-    font-size: 19px;
-  }
-  .search-input {
-    padding: 20px;
-  }
-  /* .search-button{
-    width: 100px;
-  } */
-  .search-header {
-    width: fit-content;
-    padding: 40px;
-  }
-}
-
 @media (max-width: 767px) {
   .search-header {
     flex-direction: column;
@@ -861,6 +845,25 @@ max-width: 420px;
   }
   .search-bar {
     width: fit-content;
+  }
+}
+
+@media (max-width: 480px) {
+  .please {
+    font-size: 50px;
+  }
+  .footer div a {
+    font-size: 19px;
+  }
+  .search-input {
+    padding: 20px;
+  }
+  /* .search-button{
+    width: 100px;
+  } */
+  .search-header {
+    width: fit-content;
+    padding: 40px;
   }
 }
 
